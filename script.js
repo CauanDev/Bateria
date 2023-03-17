@@ -24,6 +24,7 @@ function PlaySound(e){
         let keyelement = document.querySelector(`div[data-key="${e}"`)
         
         if(element){
+            element.currentTime = 0;
             element.play()
         }
         if(keyelement){
